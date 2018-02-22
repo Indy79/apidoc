@@ -49,6 +49,7 @@ function getUser() { return; }
  * @apiSuccess {Number} id         The new Users-ID.
  *
  * @apiUse CreateUserError
+ * @apiUse CreateUserErrorTEST
  */
 function postUser() { return; }
 

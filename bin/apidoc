@@ -25,7 +25,7 @@ var argv = nomnom
 
     .option('input', { abbr: 'i', 'default': './', list: true, help: 'Input / source dirname.' })
 
-    .option('common', { abbr: 'C', help: 'folder of common definition' })
+    .option('common', { help: 'folder of common definition', 'default': './common/', list: true })
     .option('output', { abbr: 'o', 'default': './doc/', help: 'Output dirname.' })
 
     .option('template', { abbr: 't', 'default': path.join(__dirname, '../template/'),

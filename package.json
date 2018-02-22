@@ -18,7 +18,7 @@
   "scripts": {
     "test": "npm run jshint && mocha test/",
     "jshint": "jshint lib/ test/",
-    "build-example": "bin/apidoc -i example/ -o tmp/",
+    "build-example": "bin/apidoc -i example/ -o tmp/ --common common/ --debug",
     "check-updates": "npm-check-updates",
     "update-lodash": "./node_modules/lodash-cli/bin/lodash -p -o template/vendor/lodash.custom.min.js include=groupBy,each,extend,some exports=amd"
   },
@@ -34,7 +34,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "apidoc-core": "~0.8.2",
+    "apidoc-core": "git+https://github.com/Indy79/apidoc-core.git",
     "fs-extra": "~3.0.1",
     "lodash": "~4.17.4",
     "markdown-it": "^8.3.1",
