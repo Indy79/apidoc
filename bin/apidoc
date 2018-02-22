@@ -25,6 +25,7 @@ var argv = nomnom
 
     .option('input', { abbr: 'i', 'default': './', list: true, help: 'Input / source dirname.' })
 
+    .option('common', { abbr: 'C', help: 'folder of common definition' })
     .option('output', { abbr: 'o', 'default': './doc/', help: 'Output dirname.' })
 
     .option('template', { abbr: 't', 'default': path.join(__dirname, '../template/'),
@@ -91,6 +92,7 @@ var options = {
     excludeFilters: argv['exclude-filters'],
     includeFilters: argv['file-filters'],
     src           : argv['input'],
+    common        : argv['common'],
     dest          : argv['output'],
     template      : argv['template'],
     config        : argv['config'],
